@@ -76,7 +76,6 @@ const refreshToken = async (req, res) => {
     });
 
     const token = newToken(user);
-    console.log(token);
 
     return res.send({ token });
   } catch (error) {
